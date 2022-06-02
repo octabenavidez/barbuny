@@ -1,0 +1,240 @@
+*{
+    box-sizing: border-box;
+}
+
+/* Inicio del Header */
+
+header{
+    background-color: #f12726;
+    border-bottom: 1px solid #6b66b6;
+}
+
+header nav ul li{
+    padding: 3px 22px;
+    margin: 5px;
+    background-color: #53a745;
+    border-radius: 5px;
+}
+
+header nav ul a{
+    text-transform: uppercase;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold !important;
+    color: white !important;
+}
+
+header nav ul li:hover{
+    background-color: #eedb5e !important;
+    transition: 1s !important;
+}
+
+header nav ul li:hover a{
+    color: #4b9945 !important;
+}
+
+.navbar-brand{
+    padding: 0 !important;
+    margin: 0 !important; 
+
+}
+/* Fin del Header */
+
+/* Inicio del Main */
+
+main{
+    background-image: url(https://worldshottesttour.com/static/df7ee17193510a2cca3f53186f00fe95/ccdb5/BB_BG_2400x3000.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; 
+}
+
+#imagenPrincipal img{
+    width: 860px;
+}
+
+#info .container{
+    background-color: #f5d020;
+    background-image: linear-gradient(315deg, #f5d020 0%, #f55c03 74%);
+    border-radius: 15px;
+    font-family: 'Open Sans', sans-serif;
+    color:#473f49;
+    
+}
+
+#info .container img{
+    width: 550px;
+    border-radius: 10px;
+}
+
+#info .container h1{
+    font-weight: normal;
+    text-decoration: underline;
+}
+
+#info .container p{
+    line-height: 1.5;
+    font-weight: bolder;
+}
+
+/* Fin del main */
+
+/* Inicio del Footer */
+
+footer{
+    background-color: #473f49;
+    color:  #e1d9ee ;
+    font-family: 'Open Sans', sans-serif;
+}
+
+footer h4{
+    margin: 0;
+}
+
+.imagenPrincipal-footer img{
+    width: 50px;
+}
+
+.imagenSecundaria-footer img{
+    width: 30px;
+    height: 30px;
+    opacity: .3;
+}
+
+.imagenSecundaria-footer a img:hover{
+    opacity: 1;
+}
+
+/* Fin del Footer */
+
+/* HTML Discografia */
+
+#discos img{
+    opacity: 0.7;
+}
+
+#discos img:hover{
+    opacity: 1;
+    transform: translate(0px, -10px);
+}
+
+/* Fin de HTML Discografia */
+
+/* HTML Tour */
+
+#tour table{
+    border: #f30e07;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#tour table .city{
+    color: #f30e07;
+}
+
+#tour table .sale a{
+    background-color: #4b9945;
+    text-decoration: none;
+    color: white;
+    padding: 5px 20px;
+    font-family: "Open Sans", sans-serif;
+    letter-spacing: 1px;
+    transition: 0.7s;
+}
+
+#tour table .sale a:hover{
+    background-color: #eedb5e;
+    color: #4b9945;
+}
+
+/* Fin HTML Tour */
+
+/* HTML Noticias */
+
+#noticias .card{
+    background-color: #f5d020;
+    background-image: linear-gradient(315deg, #f5d020 0%, #f55c03 74%);
+    box-shadow: 10px 5px 15px;
+}
+
+#noticias{
+    font-family: Montserrat;
+    color:#473f49;
+}
+
+/* Fin HTML Noticias */
+
+/* HTML Form*/
+
+#form .contenedor{
+    max-width: 520px;
+    margin: 0 auto;
+}
+
+#form {
+    font-family: Montserrat;
+}
+
+
+/* Fin HTML Form */
+
+/* Responsive */
+
+@media only screen and (max-width: 728px){
+    header .container-fluid{
+        flex-direction: column;
+    }
+    header nav ul{
+        flex-direction: column;
+        text-align: center;
+    }
+    #tour table .sale{
+        border-radius: 10px;
+        margin-bottom: 10px;
+    }
+    #tour table .sale a{
+        padding: 5px 70px;
+    }
+    #tour table thead{
+        display: none;
+    }
+    #tour table tr{
+        display: flex;
+        flex-direction: column;
+        border-bottom: red solid 3px!important;
+    }
+    #tour table{
+        border: none;
+        font-weight: bold;
+    }
+    #tour table td{
+        border: none;
+    }
+}
+
+@media only screen and (max-width: 990px){
+    #MenuNavegacion{
+        text-align: center;
+    }
+    .container-fluid{
+        width: 50% !important;
+        margin: 0 auto !important;
+    }
+    #noticias img{
+        width: 100%;
+        height: 100%;
+    }
+}
+
+@media only screen and (min-width: 990px){
+    #noticias img{
+        height: 200px;
+    }
+}
+
+@media only screen and (min-width: 1200px){
+    #noticias img{
+        height: 170px;
+    }
+}
+
+/* Responsive */
